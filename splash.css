@@ -68,11 +68,11 @@
     left: 34%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    animation: fadein 4s;
+    animation: fadein 2s;
     -moz-animation: fadein 6s; /* Firefox */
     -webkit-animation: fadein 6s; /* Safari and Chrome */
     -o-animation: fadein 6s; /* Opera */
-    animation-delay: 6s;
+    animation-delay: 8s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
@@ -83,7 +83,7 @@
   left: 34%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  animation: fadein 4s;
+  animation: fadein 2s;
   -moz-animation: fadein 6s; /* Firefox */
   -webkit-animation: fadein 6s; /* Safari and Chrome */
   -o-animation: fadein 6s; /* Opera */
