@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- start Convert Experiences code --><script type="text/javascript" src="//cdn-3.convertexperiments.com/js/1002641-10021128.js"></script><!-- end Convert Experiences code -->
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PW958L');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./main.css">
+
+    <!-- Local Scripts -->
+    <script src="./main.js"></script>
+
+    <!-- external CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- external Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <title>Kinobody Survey</title>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW958L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <!--<<<<<<<<<<<<<<<<<<<<<<<<  NAV BAR  >>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+    <div class="nav-background">
+      <ul class="nav-bar">
+        <li id="gender-tab" class="nav-item active" onclick="genderTabClick()">
+          <i class="fa fa-venus-mars fa-2x" aria-hidden="true"></i>
+          <p>GENDER</p>
+        </li>
+        <li id="age-tab" class="nav-item off-color" onclick="ageTabClick()">
+          <i class="fa fa-calendar-alt fa-2x" aria-hidden="true"></i>
+          <p>AGE</p>
+        </li>
+        <li id="condition-tab" class="nav-item" onclick="conditionTabClick()">
+          <i class="fa fa-heartbeat fa-2x" aria-hidden="true"></i>
+          <p>CONDITION</p>
+        </li>
+        <li id="goal-tab" class="nav-item off-color" onclick="goalTabClick()">
+          <i class="fa fa-flag-checkered fa-2x" aria-hidden="true"></i>
+          <p>GOAL</p>
+        </li>
+        <li class="nav-item">
+          <i class="fas fa-clipboard-check fa-2x" aria-hidden="true"></i>
+          <p>RESULTS</p>
+        </li>
+      </ul>
+    </div>
+
+    <!--<<<<<<<<<<<<<<<<<<<<<<<<  GENDER SELECTION  >>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+    <div id="gender-page">
+        <p class="page-header">
+        TO START, PLEASE SELECT IF YOU'RE A <b>MAN</b> OR A <b>WOMAN</b>:
+        </p>
+
+        <ul class="button-form">
+          <li class="gender-buttons male-color" onClick="maleClick()"><p>I'M A MAN<i class="fas fa-angle-right fa-1x" style="padding-left: 10px"></i></p></li>
+          <li class="gender-buttons female-color" onClick="femaleClick()"><p>I'M A WOMAN<i class="fas fa-angle-right fa-1x" style="padding-left: 10px"></i></p></li>
+        </ul>
+    </div>
+
+    <!--<<<<<<<<<<<<<<<<<<<<<<<<  AGE SELECTION  >>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+    <div id="age-page" style="display: none">
+      <p class="page-header">
+      PLEASE SELECT YOUR AGE RANGE:
+      </p>
+
+      <ul class="button-form">
+        <li class="age-buttons" onclick="ageButtonClick()"><p><b>TEENS</b></p></li>
+        <li class="age-buttons" onclick="ageButtonClick()"><p><b>20's</b></p></li>
+      </ul>
+      <ul class="button-form">
+        <li class="age-buttons" onclick="ageButtonClick()"><p><b>30's</b></p></li>
+        <li class="age-buttons" onclick="ageButtonClick()"><p><b>40's</b></p></li>
+      </ul>
+      <ul class="button-form">
+        <li class="age-buttons" onclick="ageButtonClick()"><p><b>50's</b></p></li>
+        <li class="age-buttons" onclick="ageButtonClick()"><p><b>60+</b></p></li>
+      </ul>
+    </div>
+
+    <!--<<<<<<<<<<<<<<<<<<<<<<<<  CONDITION SELECTION  >>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+    <div id="condition-page" style="display: none">
+      <p class="page-header">
+      PLEASE SELECT THE BEST DESCRIPTION OF YOUR CURRENT CONDITION:
+      </p>
+
+      <ul class="button-form">
+        <li id="condition-1" class="condition-buttons">ERROR</li>
+        <li id="condition-2" class="condition-buttons">ERROR</li>
+      </ul>
+      <ul class="button-form">
+        <li id="condition-3" class="condition-buttons">ERROR</li>
+        <li id="condition-4" class="condition-buttons">ERROR</li>
+      </ul>
+    </div>
+
+    <!--<<<<<<<<<<<<<<<<<<<<<<<<  GOAL SELECTION  >>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+    <div id="goal-page" style="display: none">
+      <p class="page-header">
+      PLEASE SELECT THE BEST DESCRIPTION OF YOUR GOAL PHYSIQUE:
+      </p>
+
+      <ul class="button-form">
+        <li id="goal-1" class="goal-buttons">ERROR</li>
+        <li id="goal-2" class="goal-buttons">ERROR</li>
+      </ul>
+    </div>
+  </body>
+</html>

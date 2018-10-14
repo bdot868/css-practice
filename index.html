@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Css Practice</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <style media="screen">
+      body {
+
+        /*background-repeat: no-repeat;*/
+      }
+      .container {
+        width: 200px;
+        height: 200px;
+        background: red;
+
+      }
+      .container-active {
+        animation: animation1 5s 5 ease-in-out;
+      }
+
+      .container2 {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+      }
+      .container2-active {
+        animation: animation2 5s 5 ease-in-out;
+      }
+
+      @keyframes animation1 {
+        0%{
+          transform: translate(0px, 0px)
+          rotate(360deg);
+          background-color: red;
+          opacity: 0.2;
+        }
+        25%{
+          transform: translate(500px, 500px)
+          rotate(180deg);
+          background-color: red;
+          opacity: 0.35;
+        }
+        50%{
+          transform: translate(200px, 200px)
+          rotate(-360deg);
+          background-color: purple;
+          opacity: 0.5;
+        }
+        75%{
+          transform: translate(400px, 300px)
+          rotate(180deg);
+          background-color: red;
+          opacity: 0.75;
+        }
+        100%{
+          transform: translate(-200px, 400px)
+          rotate(360deg);
+          background-color: green;
+          opacity: 1;
+        }
+      }
+
+      @keyframes animation2 {
+        0%{
+          transform: translate(400px, 0px);
+          background-color: blue;
+          opacity: 0.2;
+        }
+        25%{
+          transform: translate(500px, 500px);
+          background-color: lightblue;
+          opacity: 0.35;
+        }
+        50%{
+          transform: translate(200px, 200px);
+          background-color: green;
+          opacity: 0.5;
+        }
+        75%{
+          transform: translate(400px, 300px);
+          background-color: yellow;
+          opacity: 0.75;
+        }
+        100%{
+          transform: translate(600px, 600px);
+          background-color: pink;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container">
+
+    </div>
+    <div class="container2"></div> -->
+
+    <form>
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="City">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="State">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Zip">
+    </div>
+    <div class="col">
+      <input type="submit" class="form-control">
+    </div>
+  </div>
+</form>
+
+
+    <script type="text/javascript">
+      var $container = $('.container')
+      var $container2 = $('.container2')
+
+      $container.on('click', function() {
+        $(this).toggleClass('container-active');
+        setTimeout(function() {
+          $container.removeClass('container-active')
+        }, 25000);
+        console.log('rotation done')
+      })
+
+      $container2.on('click', function() {
+        $(this).toggleClass('container2-active');
+        setTimeout(function() {
+          $container2.removeClass('container2-active')
+        }, 25000)
+      })
+    </script>
+  </body>
+</html>

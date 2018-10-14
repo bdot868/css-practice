@@ -1,0 +1,252 @@
+/*------------------GENERAL STYLE RULES-----------------*/
+
+body {
+  margin: 0;
+  font-family: 'Lato';
+}
+
+/*------------------NAV BAR STYLING-----------------*/
+.nav-background {
+  background-color: #313539;
+}
+
+.nav-bar {
+  list-style-type: none;
+  display: table;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.nav-item {
+  /*width: 90px;*/
+  width: 210px;
+  float: none;
+  display: inline-block;
+  color: white;
+  background-color: transparent;
+  text-align: center;
+  padding: 8px 10px 8px 10px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.nav-item i {
+  padding-top: 3px;
+  position: relative;
+  float: none;
+  display: inline-block;
+}
+
+.nav-item p {
+  margin: 0px;
+  padding-left: 10px;
+  float: none;
+  display: inline-block;
+}
+
+.active {
+  background-color: #ff7600;
+  color: #313539;
+}
+
+.off-color {
+  background-color: rgb(27, 31, 35);
+}
+
+.page-header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  font-size: 30px;
+  text-align: center;
+  max-width: 60%
+}
+
+/*------------------NAV BAR STYLING FOR MOBILE-----------------*/
+@media only screen and (max-device-width: 480px) {
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .nav-bar {
+    list-style-type: none;
+    margin: auto;
+    width: 610px;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
+
+  .nav-item p {
+    margin: 0px;
+    display: block;
+    padding: 0px;
+    float: none;
+    text-align: center;
+    width: 60px;
+  }
+
+  .nav-item i {
+
+  }
+
+  .page-header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+    max-width: 60%
+  }
+
+  .fa.fa-venus-mars.fa-5x {
+    font-size: 30px;
+  }
+
+  .fa.fa-calendar-alt.fa-5x {
+    font-size: 30px;
+  }
+
+  .fa.fa-heartbeat.fa-5x {
+    font-size: 30px;
+  }
+
+  .fa.fa-flag-checkered.fa-5x {
+    font-size: 30px;
+  }
+
+  .fas.fa-clipboard-check.fa-5x {
+    font-size: 30px;
+  }
+
+  .nav-item {
+    width: 55px;
+    float: left;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    padding: 7px 10px 6px 10px;
+    text-decoration: none;
+    font-size: 10px;
+  }
+
+  .active {
+    background-color: #ff7600;
+    color: #313539;
+  }
+
+  .off-color {
+    background-color: rgb(27, 31, 35);
+  }
+}
+/*.fa.fa-venus-mars.fa-5x {
+  font-size: 10px;
+}*/
+/*------------------GENDER PAGE STYLING-----------------*/
+
+.button-form {
+  display: table;
+  list-style-type: none;
+  list-style-position: inside;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+}
+
+.gender-buttons {
+  width: 240px;
+  float: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 26px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  color: #ffffff;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.male-color {
+  background-color: #ff7600;
+}
+
+.male-color:hover {
+  background-color: #ffad66;
+}
+
+.female-color {
+  background-color: #8e2ee8;
+}
+
+.female-color:hover {
+  background-color: #bc93e2;
+}
+
+/*------------------AGE PAGE STYLING-----------------*/
+
+.age-form {
+  list-style-type: none;
+  width: 570px;
+  padding: 10px 10px 10px 10px;
+  overflow: hidden;
+  background-color: transparent;
+  margin-top: 20px;
+}
+
+.age-buttons {
+  width: 240px;
+  float: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 26px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  color: #ffffff;
+  margin: 20px;
+  cursor: pointer;
+}
+
+/*------------------CONDITION PAGE STYLING-----------------*/
+
+.condition-buttons {
+  width: 240px;
+  float: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  color: #ffffff;
+  margin: 20px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*------------------GOAL PAGE STYLING-----------------*/
+
+.goal-buttons {
+  width: 240px;
+  float: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  color: #ffffff;
+  margin: 20px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+}
